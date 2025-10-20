@@ -62,7 +62,7 @@ body {
   }
 
   #controls span {
-    font-size: 1.4rem !important;
+    font-size: 1.4rem !important; /* */
   }
 
   #root canvas {
