@@ -56,6 +56,8 @@ body {
   color: #fff;
   border: 2px solid #fff;
   border-radius: 8px;
+  display: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 @media (max-width: 600px) {
@@ -65,12 +67,18 @@ body {
 
   #root h1 {
     font-size: 1.5rem;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
+    margin-bottom: -0.2rem;
+    margin-top: -3.3rem;
   }
 
   #root canvas {
     width: 90vw;
-    height: 40vw;
+    height: 170vw;
+  }
+
+  #controls button {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.5rem;
   }
 }
