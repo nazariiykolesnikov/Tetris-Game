@@ -42,10 +42,25 @@ document.getElementById('drop')?.addEventListener('click', () => {
     controller.updateView();
 });
 
-document.getElementById('play')?.addEventListener('click', () => {
+const playButton = document.getElementById('play');
+const pauseButton = document.getElementById('pause');
+
+pauseButton.style.display = 'none';
+
+playButton?.addEventListener('click', () => {
     if (controller.game.isGameOver()) {
         controller.reset();
     } else if (!controller.isPlaying) {
         controller.play();
     }
+
+    playButton.style.display = 'none';
+    pauseButton.style.display = 'inline-block';
+});
+
+pauseButton?.addEventListener('click', () => {
+    controller.pause();
+
+    pauseButton.style.display = 'none';
+    playButton.style.display = 'inline-block';
 });
