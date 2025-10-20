@@ -77,8 +77,6 @@ body {
   #controls button {
     display: flex; 
     flex-direction: row;
-    font-size: 2rem;
-    margin-left: 0.3rem;
-    margin-right: 0.3rem;
+    font-size: 1,8rem;
   }
 }
