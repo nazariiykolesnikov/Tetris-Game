@@ -114,7 +114,7 @@ export default class View {
         this.context.textBaseline = 'top';
         this.context.fillStyle = 'white';
         this.context.font = '16px "Times New Roman"';
-        this.context.fillText(` Score: ${score}`, this.panelX, this.panelY + 0);
+        this.context.fillText(` Score: ${score}`, this.panelX, this.panelY + 3);
         this.context.fillText(` Level: ${level}`, this.panelX, this.panelY + 24);
         this.context.fillText(` Lines: ${lines}`, this.panelX, this.panelY + 48);
         this.context.fillText(' Next:', this.panelX, this.panelY + 96);
