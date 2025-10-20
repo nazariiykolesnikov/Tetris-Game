@@ -73,7 +73,7 @@ body {
 
   #root canvas {
     width: 90vw;
-    height: 170vw;
+    height: 300vw;
   }
 
   #controls button {
