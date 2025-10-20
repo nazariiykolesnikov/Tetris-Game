@@ -61,7 +61,7 @@ export default class View {
         this.context.textAlign = 'center';
         this.context.textBaseline = 'middle';
         this.context.fillText('Game Over', this.width / 2, this.height / 2 - 48);
-        this.context.fillText(`Score: ${score}`, this.width / 2, this.height / 2);
+        this.context.fillText(` Score: ${score}`, this.width / 2, this.height / 2);
         this.context.fillText('Please, press ENTER to restart the game', this.width / 2, this.height / 2 + 48);
     }
 
@@ -72,7 +72,7 @@ export default class View {
         this.context.textAlign = 'center';
         this.context.textBaseline = 'middle';
         this.context.fillText('Paused', this.width / 2, this.height / 2 - 48);
-        this.context.fillText(`Score: ${score}`, this.width / 2, this.height / 2);
+        this.context.fillText(` Score: ${score}`, this.width / 2, this.height / 2);
         this.context.fillText('Press ENTER to resume', this.width / 2, this.height / 2 + 48);
     }
 
@@ -113,11 +113,11 @@ export default class View {
         this.context.textAlign = 'start';
         this.context.textBaseline = 'top';
         this.context.fillStyle = 'white';
-        this.context.font = '14px "Times New Roman"';
-        this.context.fillText(`Score: ${score}`, this.panelX, this.panelY + 0);
-        this.context.fillText(`Level: ${level}`, this.panelX, this.panelY + 24);
-        this.context.fillText(`Lines: ${lines}`, this.panelX, this.panelY + 48);
-        this.context.fillText('Next:', this.panelX, this.panelY + 96);
+        this.context.font = '16px "Times New Roman"';
+        this.context.fillText(` Score: ${score}`, this.panelX, this.panelY + 0);
+        this.context.fillText(` Level: ${level}`, this.panelX, this.panelY + 24);
+        this.context.fillText(` Lines: ${lines}`, this.panelX, this.panelY + 48);
+        this.context.fillText(' Next:', this.panelX, this.panelY + 96);
 
         for (let y = 0; y < nextPiece.blocks.length; y++) {
             for (let x = 0; x < nextPiece.blocks[y].length; x++) {
