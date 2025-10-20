@@ -71,7 +71,7 @@ body {
 
   #root canvas {
     width: 90vw; 
-    height: 160vw;
+    height: 140vw;
   }
 
   #controls button {
@@ -79,5 +79,7 @@ body {
     flex-direction: row;
     font-size: 0.8rem;
     padding: 0.43rem 0.7rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
   }
 }
