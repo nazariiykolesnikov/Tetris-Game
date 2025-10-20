@@ -39,6 +39,8 @@ body {
   background-color: #111;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
   transition: box-shadow 0.3s ease;
+  width: 320px;
+  height: 640px; 
 }
 
 #controls {
@@ -73,7 +75,7 @@ body {
 
   #root canvas {
     width: 90vw;
-    height: 300vw;
+    height: 160vw;
   }
 
   #controls button {
