@@ -15,3 +15,28 @@ const controller = new Controller(game, view);
 window.game = game;
 window.view = view;
 window.controller = controller;
+
+document.getElementById('left').addEventListener('click', () => {
+    controller.game.movePieceLeft();
+    controller.updateView();
+});
+
+document.getElementById('right').addEventListener('click', () => {
+    controller.game.movePieceRight();
+    controller.updateView();
+});
+
+document.getElementById('rotate').addEventListener('click', () => {
+    controller.game.rotatePiece();
+    controller.updateView();
+});
+
+document.getElementById('down').addEventListener('click', () => {
+    controller.game.movePieceDown();
+    controller.updateView();
+});
+
+document.getElementById('drop').addEventListener('click', () => {
+    controller.game.dropPiece();
+    controller.updateView();
+});
