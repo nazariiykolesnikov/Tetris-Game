@@ -85,6 +85,7 @@ body {
 
   .container h2 {
     font-size: 1.5rem !important;
+    text-align: center;
     font-weight: 800;
     margin-left: 2rem;
     margin-top: 2rem;
