@@ -22,6 +22,10 @@ body {
   margin: 0 auto;
   border: 4px solid #fffbfb;
   background-color: #111;
+  background-image: url('../images/background/tetris-canvas-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
   transition: box-shadow 0.3s ease;
   width: 320px;
