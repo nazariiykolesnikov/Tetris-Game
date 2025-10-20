@@ -1,0 +1,65 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    background-image: url('../images/background/Gumball-New-e1751274946386.png'); /* або абсолютне посилання */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fffbfb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Контейнер гри */
+#root {
+    padding: 3rem;
+    text-align: center;
+}
+
+/* Заголовок */
+#root h1 {
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(90deg,rgb(9, 128, 43) 0%, rgb(34, 215, 222) 50%, rgb(204, 28, 93) 58%, rgba(77, 201, 179, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+    user-select: none;
+}
+
+#root span {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+/* Полотно гри */
+#root canvas {
+    display: block;
+    margin: 0 auto;
+    border: 4px solid #fffbfb;
+    background-color: #111;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 600px) {
+    #root {
+        padding: 1rem;
+    }
+
+    #root h1 {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+        margin-bottom: 1rem;
+    }
+
+    #root canvas {
+        width: 90vw;
+        height: auto;
+    }
+}
